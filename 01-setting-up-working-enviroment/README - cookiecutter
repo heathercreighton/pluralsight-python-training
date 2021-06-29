@@ -1,0 +1,31 @@
+In order to setup cookiecutter you can use use terminal feature in juptyer notebook. 
+- go to Jupyter Home and navigate to module directory
+- click on "new" dropdown and click on "Terminal" option. it will open terminal where you can write commands. 
+- navigate to directory. for example for m03-extracting data in python 3
+use the cd command 
+$ cd python3/m03-extracting-data
+
+- once you are in the respective directory you can setup cookiecutter template. 
+
+- install "cookiecutter" package first using pip install command 
+$ pip install cookiecutter
+
+- once installed you can use the cookiecutter command 
+$ cookiecutter https://github.com/drivendata/cookiecutter-data-science
+if the command is not working for you use the following 
+$python3 -m cookiecutter https://github.com/drivendata/cookiecutter-data-science
+
+- and then we can fill in the details  such as
+Project_name : titanic
+repo_name : titanic
+author_name : <ENTER YOUR NAME>
+description : <PUT SOME DESCRIPTION>
+open_source_license : <SELECT ONE OPTION>
+s3_bucket : <LEAVE BLANK>
+aws_profile : <LEAVE_BLANK>
+python_interpreter : 1 
+
+- this will create the project template in the current directory 
+
+- you can see the folder using ls command 
+$ ls -ll titanic
